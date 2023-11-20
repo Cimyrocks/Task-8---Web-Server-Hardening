@@ -25,3 +25,6 @@ And finally run the docker container like this
 
 ```sudo docker run -d -p 8443:443 -v nextcloud:/var/www/html -v /home/student/nextcloud/certs/:/etc/ssl/nextcloud nextcloud_ssl```
 
+If it won't let you run the docker container because you are out of space, you can use this command to get some space back
+
+```docker system prune --all --force```
