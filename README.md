@@ -17,6 +17,8 @@ Make sure that the setssl.sh has executable permissions
 
 ```chmod +x setssl.sh```
 
+Update the dockerfile with your email and domain, otherwise it will fail to build the image
+
 Then create the docker image with this command
 
 ```sudo docker build --tag nextcloud_ssl .```
