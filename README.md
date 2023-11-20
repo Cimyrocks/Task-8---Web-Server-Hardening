@@ -30,3 +30,21 @@ And finally run the docker container like this
 If it won't let you run the docker container because you are out of space, you can use this command to get some space back
 
 ```docker system prune --all --force```
+
+## Using Nikto
+
+Install Nikto Using this command
+
+```wget https://github.com/sullo/nikto/archive/master.zip```
+
+Also you will need to install this in order to support TLS
+
+```apt install libnet-ssleay-perl```
+
+Then do the following commands
+
+```unzip master.zip```
+
+```cd nikto-master/program```
+
+```perl nikto.pl -h <your-ip>```
